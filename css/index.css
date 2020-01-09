@@ -133,6 +133,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.roundBorder {
+  border-radius: 100%;
+  text-align: center;
+}
 header {
   padding: 1% 10% 0 0;
   width: 100%;
@@ -213,6 +217,14 @@ header .btn-hover {
     width: 65%;
   }
 }
+@media ( max-width: 744px ) {
+  header .btn-hover {
+    width: 45%;
+  }
+  header h1 {
+    width: 80%;
+  }
+}
 @media ( max-width: 500px ) {
   header {
     padding: 0;
@@ -224,7 +236,7 @@ header .btn-hover {
     padding-top: 6%;
   }
   header h1 {
-    width: 60%;
+    width: 100%;
     font-size: 3rem;
   }
   header h2 {
@@ -241,46 +253,75 @@ header .btn-hover {
     margin-bottom: 50%;
   }
 }
-@media ( max-width: 744px ) {
-  header .btn-hover {
-    width: 45%;
-  }
-  header h1 {
-    width: 80%;
-  }
+.ourWorkButton {
+  background-color: #0e0a1f;
+  text-align: center;
+  padding-top: 3%;
 }
-section {
+.ourWorkButton .btn-hover {
+  width: 300px;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: 'Abril Fatface';
+  color: #FFFFFF;
+  cursor: pointer;
+  margin: 20px;
+  height: 90px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.ourWorkButton .btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.ourWorkButton .btn-hover:focus {
+  outline: none;
+}
+.ourWorkButton .btn-hover.color-7 {
+  background-image: linear-gradient(to right, #B5037C, #0e0a1f, #0e0a1f, #ff00ae);
+  box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+.marketingSection {
   width: 100%;
-  height: 250vh;
+  height: 200vh;
   background-color: #0e0a1f;
   padding-top: 15%;
   text-align: center;
 }
-section .row {
+.marketingSection .row {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-section .row div {
+.marketingSection .row div {
   width: 35%;
   height: 0;
   padding-bottom: 35%;
   border: 4px solid #FFFFFF;
   margin: 0.5%;
 }
-section .row img {
+.marketingSection .row img {
   width: 80%;
   height: auto;
   padding-top: 1%;
 }
-section h3 {
+.marketingSection h3 {
   font-family: 'Abril Fatface';
   font-size: 3vw;
   padding: 3%;
   width: 100%;
 }
-section p {
+.marketingSection p {
   font-family: 'Montserrat';
   font-size: 2vw;
   line-height: 2.5vw;
@@ -288,19 +329,170 @@ section p {
   width: 100%;
 }
 @media ( max-width: 500px ) {
-  section .row div {
+  .marketingSection .row div {
     padding-bottom: 60%;
     margin-bottom: 7%;
     margin-right: 2%;
     margin-left: 2%;
   }
-  section h3 {
+  .marketingSection h3 {
     padding: 5% 30%;
   }
-  section p {
+  .marketingSection p {
     padding: 5% 20%;
   }
-  section .row .two {
+  .marketingSection .row .two {
     padding-bottom: 53%;
+  }
+}
+@media (max-width: 1200px) {
+  .marketingSection {
+    height: 150vh;
+  }
+}
+@media (max-width: 900px) {
+  .marketingSection {
+    height: 100vh;
+  }
+}
+@media (max-width: 600px) {
+  .marketingSection {
+    height: 100vh;
+  }
+}
+.teamHeader {
+  background: linear-gradient(172.46deg, rgba(14, 11, 32, 0.86) 14.75%, rgba(14, 11, 32, 0) 25.05%), linear-gradient(348.72deg, rgba(239, 1, 159, 0) 14.02%, rgba(14, 11, 32, 0.7) 74.08%), url("../images/iphone.jpg") no-repeat center center fixed;
+  padding: 0;
+}
+.teamHeader .items {
+  align-items: center;
+}
+.teamHeader .items * {
+  background: none;
+}
+.teamHeader img,
+.teamHeader h1,
+.teamHeader h2 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.teamHeader .buttons {
+  text-align: center;
+}
+.teamHeader .btn-hover {
+  width: 200px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Abril Fatface';
+  color: #FFFFFF;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.teamHeader .btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.teamHeader .btn-hover:focus {
+  outline: none;
+}
+.teamHeader .btn-hover.color-7 {
+  background-image: linear-gradient(to right, #B5037C, #0e0a1f, #0e0a1f, #ff00ae);
+  box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+.teamSection {
+  padding-top: 3%;
+  background: #0e0a1f;
+  height: 200vh;
+}
+.teamSection h2 {
+  text-align: center;
+  font-size: 4rem;
+  font-family: 'Abril Fatface';
+  padding-bottom: 2%;
+}
+.teamSection p {
+  text-align: center;
+  font-family: 'Abril Fatface';
+  font-size: 1.3rem;
+  padding-bottom: 2%;
+  margin: 0 10%;
+  line-height: 1.7rem;
+}
+.teamSection h3 {
+  text-align: center;
+  font-size: 1.7rem;
+  font-family: 'Montserrat';
+  font-weight: bolder;
+}
+@media ( max-width: 500px ) {
+  .teamSection {
+    padding-top: 4%;
+    height: 150vh;
+  }
+}
+.circles {
+  margin: 0 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.circles .red {
+  color: red;
+  background: none;
+}
+.circles h3 {
+  color: skyblue;
+}
+.circles img {
+  border-radius: 100%;
+  text-align: center;
+  width: 70%;
+  padding-bottom: 7%;
+}
+.circles div {
+  width: 20%;
+  margin: 1%;
+}
+.circles p {
+  font-size: 1rem;
+  padding-top: 2%;
+  font-family: 'Muli';
+  margin: 0;
+}
+.circles .member {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@media ( max-width: 500px ) {
+  .circles {
+    margin-top: 5%;
+  }
+  .circles div {
+    width: 45%;
+  }
+}
+@media ( max-width: 1200px ) {
+  .circles div {
+    width: 30%;
+  }
+}
+@media ( max-width: 744px ) {
+  .circles div {
+    width: 45%;
   }
 }

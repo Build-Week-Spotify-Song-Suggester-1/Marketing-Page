@@ -1,6 +1,32 @@
-section{
+
+.ourWorkButton{
+    background-color: @bgcolor;
+    text-align: center;
+    padding-top: 3%;
+    .btn-hover{
+        .btn(90px, 300px, 2rem);
+        
+    }
+    
+    .btn-hover:hover {
+        background-position: 100% 0;
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+    
+    .btn-hover:focus {
+        outline: none;
+    }
+    .btn-hover.color-7 {
+        background-image: linear-gradient(to right, #B5037C, @bgcolor, @bgcolor, rgb(255, 0, 174));
+        box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+    }
+}
+.marketingSection{
     width: 100%;
-    height: 250vh;
+    height: 200vh;
     background-color: @bgcolor;
     padding-top: 15%;
     text-align: center;
@@ -57,4 +83,13 @@ section{
         }
     }
 
+    @media (max-width: 1200px){
+        height: 150vh;
+    }
+    @media (max-width: 900px){
+        height: 100vh;
+    }
+    @media (max-width: 600px){
+        height: 100vh;
+    }
 }

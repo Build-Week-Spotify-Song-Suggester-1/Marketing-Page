@@ -1,0 +1,118 @@
+.teamHeader{
+    background: linear-gradient(172.46deg, rgba(14, 11, 32, 0.86) 14.75%, rgba(14, 11, 32, 0) 25.05%), linear-gradient(348.72deg, rgba(239, 1, 159, 0) 14.02%, rgba(14, 11, 32, 0.7) 74.08%), url("../images/iphone.jpg") no-repeat center center fixed;
+    padding: 0;
+    .items{
+        align-items: center;
+    }
+    .items *{
+        background: none;
+    }
+    img, h1, h2{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    
+    .buttons {
+        text-align: center;
+    }
+    .btn-hover{
+        .btn(55px, 200px, 1rem)
+    }
+    
+    .btn-hover:hover {
+        background-position: 100% 0;
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+    
+    .btn-hover:focus {
+        outline: none;
+    }
+    .btn-hover.color-7 {
+        background-image: linear-gradient(to right, #B5037C, @bgcolor, @bgcolor, rgb(255, 0, 174));
+        box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+    }
+} 
+.teamSection{
+    padding-top: 3%;
+    background: @bgcolor;
+    height: 200vh;
+    h2{
+        text-align: center;
+        font-size: 4rem;
+        font-family: @fatface;
+        padding-bottom: 2%;
+    }
+    p{
+        text-align: center;
+        font-family: @fatface;
+        font-size: 1.3rem;
+        padding-bottom: 2%;
+        margin: 0 10%;
+        line-height: 1.7rem;
+    }
+    h3{
+        text-align: center;
+        font-size: 1.7rem;
+        font-family: @mont;
+        font-weight: bolder;
+    }
+    @media @mobile{
+        padding-top: 4%;
+        height: 150vh;
+    }
+}  
+.circles{
+    margin: 0 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .red{
+        color: red;
+        background: none;
+    }
+    h3{
+        color: skyblue;
+    }
+    img{
+        .roundBorder;
+        width: 70%;      
+        padding-bottom: 7%;
+    }
+    div{
+        width: 20%;
+        margin: 1%;
+    }
+    p{
+        font-size:1rem;
+        padding-top: 2%;
+        font-family: @muli;
+        margin: 0;
+    }
+    .member{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+  @media @mobile{
+      margin-top: 5%;
+      div{
+          width: 45%;
+      }
+  }
+  @media @team{
+      div{
+          width: 30%; 
+      }
+  }
+  @media @button{
+      div{
+          width: 45%;
+      }
+  }
+}
